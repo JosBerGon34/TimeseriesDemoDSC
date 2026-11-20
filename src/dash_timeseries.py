@@ -18,11 +18,11 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 # ==============================================================================
 
 
-RAW_BASE = "https://raw.githubusercontent.com/JosBerGon34/TimeseriesDemoDSC/refs/heads/main"
+BASE_RAW_URL = "https://raw.githubusercontent.com/JosBerGon34/TimeseriesDemoDSC/refs/heads/main"
 
 
 def load_joblib_from_url(folder: str, filename: str):
-    clean_base = RAW_BASE.rstrip("/")
+    clean_base = BASE_RAW_URL.rstrip("/")
     clean_folder = folder.strip("/")
     url = f"{clean_base}/{clean_folder}/{filename}"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
