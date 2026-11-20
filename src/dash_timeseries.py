@@ -100,7 +100,7 @@ FIG_MULTIBAR = build_multibar_from_dict(MULTIBAR_EDA)
 # 3. DASH APPLICATION LAYOUT
 # ==============================================================================
 app = Dash(__name__, title="Evolución Política de España — Time Series & Macro")
-
+server = app.server  # <--- AQUÍ MISMO
 CARD_STYLE = {
     "backgroundColor": "#161b22",
     "border": "1px solid #30363d",
