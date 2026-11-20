@@ -18,7 +18,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 # ==============================================================================
 
 
-RAW_BASE = "https://raw.githubusercontent.com/JosBerGon34/DataScienceCourse/Module10.2/requirements.txt"
+RAW_BASE = "https://raw.githubusercontent.com/JosBerGon34/TimeseriesDemoDSC/refs/heads/main"
 
 
 def load_joblib_from_url(folder: str, filename: str):
